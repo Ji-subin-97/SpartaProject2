@@ -37,7 +37,22 @@ Animal* createRandomAnimal() {
 }
 
 int main()
-{
+{	
+	Animal* animals[3];
+	animals[0] = new Dog();
+	animals[1] = new Cat();
+	animals[2] = new Cow();
+
+	for (Animal* item : animals) {
+		item->makeSound();
+	}
+
+	for (Animal* item : animals) {
+		delete item;
+	}
+
+	cout << "==================================================\n";
+
 	int zooAnimalCount = 10; // 동물수
 	int zooSize = 10; // 동물원 크기
 
