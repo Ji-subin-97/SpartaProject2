@@ -1,7 +1,7 @@
 #include <iostream>
 #include <random>
 #include <crtdbg.h>		// 메모리누수확인
-#include "Animal.h"
+#include "Animal.cpp"
 
 #if _DEBUG
 #define new new(_NORMAL_BLOCK,__FILE__,__LINE__)
