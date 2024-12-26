@@ -41,6 +41,11 @@ int main()
 	int zooAnimalCount = 10; // 동물수
 	int zooSize = 10; // 동물원 크기
 
+	if (zooAnimalCount > zooSize) {
+		cout << "동물 수 초과\n";
+		return 0;
+	}
+
 	{
 		Zoo zoo(zooSize);
 		while (zooAnimalCount != 0) {
