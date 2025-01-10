@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// 1.
+
 class Animal {
 public:
 	virtual ~Animal(){}
@@ -45,7 +47,7 @@ private:
 	int count;		// µ¿¹°¼ö			
 public:
 	Zoo(int size) : size(size), count(0) {
-		animals = new Animal * [size];
+		animals = new Animal*[size];
 	}
 	~Zoo() {
 		cout << "==================================================\n";

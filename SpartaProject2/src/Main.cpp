@@ -10,6 +10,8 @@
 
 using namespace std;
 
+// 2.
+
 Animal* createRandomAnimal() {
 	random_device rd;
 	mt19937 generator(rd());
